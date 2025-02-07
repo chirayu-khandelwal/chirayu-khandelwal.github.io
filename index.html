@@ -1,1 +1,107 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chirayu Khandelwal's Funky Page</title>
+  <style>
+    /* Funky and vibrant styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+      color: #fff;
+      text-align: center;
+      animation: backgroundShift 10s infinite alternate;
+    }
+    @keyframes backgroundShift {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+    }
+    header {
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.3);
+    }
+    nav {
+      margin: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: transform 0.3s;
+    }
+    nav a:hover {
+      transform: scale(1.2);
+    }
+    .content-section {
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 800px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+    .projects li {
+      list-style-type: none;
+      margin: 1rem 0;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .projects li:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+    footer {
+      padding: 1rem;
+      font-size: 0.8rem;
+      background: rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Chirayu Khandelwal's Funky Page!</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="content-section">
+    <h2>About Me</h2>
+    <p>Hello! I'm Chirayu Khandelwal, a passionate developer who loves creating dynamic and engaging web experiences. This page is a vibrant reflection of my creative spirit—full of energy, color, and smooth transitions!</p>
+  </section>
+
+  <section id="projects" class="content-section">
+    <h2>Projects</h2>
+    <ul class="projects">
+      <li><strong>Project One:</strong> A groundbreaking web application that turns creative ideas into reality.</li>
+      <li><strong>Project Two:</strong> A mobile app designed to make daily tasks interactive and fun.</li>
+      <li><strong>Project Three:</strong> A collaborative platform connecting innovators from around the world.</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="content-section">
+    <h2>Contact</h2>
+    <p>Want to collaborate or just say hi? Reach out via <a href="mailto:chirayu@example.com" style="color:#ffeb3b;">email</a> or connect with me on social media!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Chirayu Khandelwal. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
